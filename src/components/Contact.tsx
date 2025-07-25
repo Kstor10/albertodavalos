@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Mail, Phone, MapPin, Clock, Send, Github, Linkedin, Twitter } from 'lucide-react';
+import { Mail, Phone, MapPin, Clock, Send, Github, Linkedin } from 'lucide-react';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { useToast } from '@/hooks/use-toast';
 
@@ -41,19 +41,19 @@ const Contact: React.FC = () => {
     {
       icon: Mail,
       label: 'Email',
-      value: 'alex.garcia@example.com',
-      href: 'mailto:alex.garcia@example.com'
+      value: 'albertodavalos.ia@gmail.com',
+      href: 'mailto:albertodavalos.ia@gmail.com'
     },
     {
       icon: Phone,
       label: 'Teléfono',
-      value: '+34 123 456 789',
-      href: 'tel:+34123456789'
+      value: '+34 611 511 075',
+      href: 'tel:+34611511075'
     },
     {
       icon: MapPin,
       label: 'Ubicación',
-      value: 'Madrid, España',
+      value: 'Barcelona, España',
       href: '#'
     },
     {
@@ -68,20 +68,20 @@ const Contact: React.FC = () => {
     {
       icon: Github,
       label: 'GitHub',
-      href: 'https://github.com',
+      href: 'https://github.com/luisalbertodavalos',
       color: 'hover:text-gray-400'
     },
     {
       icon: Linkedin,
       label: 'LinkedIn',
-      href: 'https://linkedin.com',
+      href: 'https://www.linkedin.com/in/luis-alberto-dávalos-5b7a94188',
       color: 'hover:text-blue-400'
     },
     {
-      icon: Twitter,
-      label: 'Twitter',
-      href: 'https://twitter.com',
-      color: 'hover:text-blue-400'
+      icon: Mail,
+      label: 'Email',
+      href: 'mailto:albertodavalos.ia@gmail.com',
+      color: 'hover:text-green-400'
     }
   ];
 
@@ -273,7 +273,7 @@ const Contact: React.FC = () => {
                 ¿Necesitas una consulta rápida? Escríbeme directamente por WhatsApp.
               </p>
               <a
-                href="https://wa.me/34123456789"
+                href="https://wa.me/34611511075"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 text-sm font-medium text-primary hover:text-primary-700 transition-colors"

@@ -13,9 +13,9 @@ const Hero: React.FC = () => {
   };
 
   const socialLinks = [
-    { icon: Github, href: 'https://github.com', label: 'GitHub' },
-    { icon: Linkedin, href: 'https://linkedin.com', label: 'LinkedIn' },
-    { icon: Mail, href: 'mailto:contact@example.com', label: 'Email' }
+    { icon: Github, href: 'https://github.com/luisalbertodavalos', label: 'GitHub' },
+    { icon: Linkedin, href: 'https://www.linkedin.com/in/luis-alberto-dávalos-5b7a94188', label: 'LinkedIn' },
+    { icon: Mail, href: 'mailto:albertodavalos.ia@gmail.com', label: 'Email' }
   ];
 
   return (
@@ -39,7 +39,7 @@ const Hero: React.FC = () => {
 
             {/* Name & Title */}
             <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
-              <span className="block text-foreground">Alex García</span>
+              <span className="block text-foreground">Luis Alberto Dávalos</span>
               <span className="block text-gradient">{t('hero.title')}</span>
             </h1>
 

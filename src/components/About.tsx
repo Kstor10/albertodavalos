@@ -6,88 +6,99 @@ const About: React.FC = () => {
   const { t } = useLanguage();
 
   const skills = {
-    frontend: [
-      'React', 'Vue.js', 'TypeScript', 'Next.js', 'TailwindCSS', 'SASS',
-      'HTML5', 'CSS3', 'JavaScript ES6+', 'Webpack', 'Vite'
-    ],
-    backend: [
-      'Node.js', 'Python', 'Express.js', 'FastAPI', 'PostgreSQL', 'MongoDB',
-      'Redis', 'Docker', 'AWS', 'Firebase', 'GraphQL', 'REST APIs'
-    ],
-    mobile: [
-      'React Native', 'Flutter', 'Expo', 'Swift', 'Kotlin',
-      'Electron', 'PWA', 'Capacitor'
-    ],
     ai: [
-      'TensorFlow', 'PyTorch', 'OpenAI API', 'LangChain', 'Hugging Face',
-      'Scikit-learn', 'Pandas', 'NumPy', 'Computer Vision', 'NLP'
+      'Azure ML', 'CrewAI', 'LangFlow', 'OpenAI API', 'Anthropic Claude', 'Hugging Face',
+      'Pinecone', 'LangChain', 'RapidAPI', 'AI Agents', 'Machine Learning'
+    ],
+    tools: [
+      'Make', 'Zapier', 'Voiceflow', 'N8N', 'PowerBI', 'Figma', 'Miro',
+      'Jira', 'Notion', 'Airtable', 'Google Workspace', 'Microsoft PowerApps'
+    ],
+    languages: [
+      'TypeScript', 'JavaScript', 'Python'
+    ],
+    product: [
+      'Product Lifecycle', 'Stakeholder Management', 'Agile Methodologies', 
+      'User Validation', 'Roadmapping', 'Cross-functional Teams', 'KPI Analysis'
     ]
   };
 
   const skillCategories = [
-    {
-      key: 'frontend',
-      title: t('about.skills.frontend'),
-      icon: Code,
-      color: 'from-blue-500 to-cyan-500',
-      skills: skills.frontend
-    },
-    {
-      key: 'backend',
-      title: t('about.skills.backend'),
-      icon: Database,
-      color: 'from-green-500 to-emerald-500',
-      skills: skills.backend
-    },
-    {
-      key: 'mobile',
-      title: t('about.skills.mobile'),
-      icon: Smartphone,
-      color: 'from-purple-500 to-pink-500',
-      skills: skills.mobile
-    },
     {
       key: 'ai',
       title: t('about.skills.ai'),
       icon: Brain,
       color: 'from-orange-500 to-red-500',
       skills: skills.ai
+    },
+    {
+      key: 'tools',
+      title: t('about.skills.tools'),
+      icon: Database,
+      color: 'from-green-500 to-emerald-500',
+      skills: skills.tools
+    },
+    {
+      key: 'languages',
+      title: t('about.skills.languages'),
+      icon: Code,
+      color: 'from-blue-500 to-cyan-500',
+      skills: skills.languages
+    },
+    {
+      key: 'product',
+      title: t('about.skills.product'),
+      icon: Smartphone,
+      color: 'from-purple-500 to-pink-500',
+      skills: skills.product
     }
   ];
 
   const experience = [
     {
-      title: 'Senior Full Stack Developer',
-      company: 'TechCorp Solutions',
-      period: '2022 - Presente',
-      description: 'Desarrollo de aplicaciones web escalables y soluciones de IA para empresas Fortune 500.'
+      title: 'Cofounder & AI Product Manager',
+      company: 'Datway.ai (freelance)',
+      period: '2023 - 2025',
+      description: 'Lideré el ciclo completo de productos basados en IA, desde ideación hasta implementación y validación de usuarios. Diseñé y desplegué chatbots conversacionales personalizados y automaticé flujos de trabajo complejos.'
     },
     {
-      title: 'Full Stack Developer',
-      company: 'Innovation Labs',
-      period: '2020 - 2022',
-      description: 'Creación de productos digitales innovadores usando tecnologías modernas y metodologías ágiles.'
+      title: 'Hospitality & Cocktail Consultant',
+      company: 'Freelance',
+      period: 'Mar 2019 - Ene 2024',
+      description: 'Creé menús de cócteles signature, definí planes estratégicos y lideré equipos. Preparé estructuras de costos y presupuestos.'
     },
     {
-      title: 'Frontend Developer',
-      company: 'StartupXYZ',
-      period: '2019 - 2020',
-      description: 'Desarrollo de interfaces de usuario responsivas y optimización de rendimiento web.'
+      title: 'Business Developer',
+      company: 'Schweppes Premium Mixers',
+      period: 'Feb 2020 - Oct 2020',
+      description: 'Gestioné y mantuve portafolios de clientes en España. Creé menús digitales y estrategias de marketing.'
     }
   ];
 
   const education = [
     {
-      title: 'Ingeniería en Sistemas Computacionales',
-      institution: 'Universidad Tecnológica',
-      period: '2015 - 2019',
-      description: 'Especialización en Desarrollo de Software e Inteligencia Artificial'
+      title: 'AI Product Manager Course',
+      institution: 'Microsoft',
+      period: '2025 - En curso',
+      description: 'Curso especializado en gestión de productos de inteligencia artificial'
     },
     {
-      title: 'Machine Learning Certification',
-      institution: 'Coursera - Stanford University',
-      period: '2021',
-      description: 'Certificación en algoritmos de aprendizaje automático y redes neuronales'
+      title: 'HND in Multiplatform Software Development',
+      institution: 'La Salle Barcelona',
+      period: '2025 - En curso',
+      description: 'Higher National Diploma en Desarrollo de Software Multiplataforma'
+    },
+    {
+      title: 'Master in AI & Innovation',
+      institution: 'Founderz x Microsoft',
+      period: 'Oct 2024 - Jun 2025',
+      description: 'Máster en Inteligencia Artificial e Innovación'
+    },
+    {
+      title: 'Advanced Course in Generative AI',
+      institution: 'UDIA/UCAM',
+      period: 'Jul 2024 - Oct 2024',
+      description: 'Curso Universitario Avanzado en IA Generativa'
     }
   ];
 
@@ -112,7 +123,7 @@ const About: React.FC = () => {
               <div className="w-32 h-32 mx-auto mb-6 relative">
                 <div className="w-full h-full rounded-full bg-gradient-to-br from-primary to-secondary p-1">
                   <div className="w-full h-full rounded-full bg-muted flex items-center justify-center">
-                    <span className="text-4xl font-bold text-gradient font-mono">AG</span>
+                    <span className="text-4xl font-bold text-gradient font-mono">LAD</span>
                   </div>
                 </div>
                 <div className="absolute -bottom-2 -right-2 w-8 h-8 bg-green-500 rounded-full border-4 border-background flex items-center justify-center">
@@ -120,7 +131,7 @@ const About: React.FC = () => {
                 </div>
               </div>
 
-              <h3 className="text-2xl font-bold mb-4">Alex García</h3>
+              <h3 className="text-2xl font-bold mb-4">Luis Alberto Dávalos</h3>
               <p className="text-muted-foreground mb-6 leading-relaxed">
                 {t('about.description')}
               </p>
@@ -128,20 +139,20 @@ const About: React.FC = () => {
               {/* Stats */}
               <div className="grid grid-cols-2 gap-4">
                 <div className="text-center">
-                  <div className="text-2xl font-bold text-primary">5+</div>
+                  <div className="text-2xl font-bold text-primary">2+</div>
                   <div className="text-sm text-muted-foreground">Años</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-2xl font-bold text-primary">50+</div>
-                  <div className="text-sm text-muted-foreground">Proyectos</div>
+                  <div className="text-2xl font-bold text-primary">10+</div>
+                  <div className="text-sm text-muted-foreground">Proyectos IA</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-2xl font-bold text-primary">15+</div>
-                  <div className="text-sm text-muted-foreground">Tecnologías</div>
+                  <div className="text-2xl font-bold text-primary">C2</div>
+                  <div className="text-sm text-muted-foreground">Inglés</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-2xl font-bold text-primary">100%</div>
-                  <div className="text-sm text-muted-foreground">Satisfacción</div>
+                  <div className="text-2xl font-bold text-primary">3</div>
+                  <div className="text-sm text-muted-foreground">Idiomas</div>
                 </div>
               </div>
             </div>

@@ -19,8 +19,8 @@ const translations = {
     'nav.contact': 'Contacto',
     
     // Hero Section
-    'hero.title': 'Desarrollador Full Stack & IA',
-    'hero.subtitle': 'Creando experiencias digitales excepcionales con tecnologías modernas y soluciones de inteligencia artificial',
+    'hero.title': 'AI Product Manager',
+    'hero.subtitle': 'Liderando el desarrollo de productos basados en IA end-to-end, desde la ideación hasta el despliegue, combinando expertise técnico con visión de producto',
     'hero.cta': 'Ver Proyectos',
     'hero.download': 'Descargar CV',
     
@@ -38,12 +38,12 @@ const translations = {
     
     // About Section
     'about.title': 'Sobre Mí',
-    'about.subtitle': 'Desarrollador apasionado por crear soluciones innovadoras',
-    'about.description': 'Con más de 5 años de experiencia en desarrollo full stack, me especializo en crear aplicaciones web modernas, soluciones de IA y aplicaciones multiplataforma. Mi objetivo es transformar ideas complejas en productos digitales elegantes y funcionales.',
-    'about.skills.frontend': 'Frontend',
-    'about.skills.backend': 'Backend',
-    'about.skills.mobile': 'Mobile/Desktop',
-    'about.skills.ai': 'Inteligencia Artificial',
+    'about.subtitle': 'AI Product Manager con sólida base en inteligencia artificial y desarrollo de productos',
+    'about.description': 'AI Product Manager con experiencia en construcción de soluciones de IA end-to-end para problemas de negocio reales. Combino expertise técnico en IA y APIs con mentalidad orientada a producto y comprensión profunda de las necesidades del cliente. Especializado en liderar equipos multifuncionales y impulsar la innovación a través de productos basados en IA.',
+    'about.skills.ai': 'AI & ML',
+    'about.skills.tools': 'Herramientas & Automatización',
+    'about.skills.languages': 'Lenguajes de Programación',
+    'about.skills.product': 'Product Management',
     
     // Contact Section
     'contact.title': 'Contacto',
@@ -69,8 +69,8 @@ const translations = {
     'nav.contact': 'Contact',
     
     // Hero Section
-    'hero.title': 'Full Stack Developer & AI',
-    'hero.subtitle': 'Creating exceptional digital experiences with modern technologies and artificial intelligence solutions',
+    'hero.title': 'AI Product Manager',
+    'hero.subtitle': 'Leading end-to-end AI product development from ideation to deployment, combining technical expertise with product vision',
     'hero.cta': 'View Projects',
     'hero.download': 'Download CV',
     
@@ -88,12 +88,12 @@ const translations = {
     
     // About Section
     'about.title': 'About Me',
-    'about.subtitle': 'Developer passionate about creating innovative solutions',
-    'about.description': 'With over 5 years of experience in full stack development, I specialize in creating modern web applications, AI solutions, and cross-platform applications. My goal is to transform complex ideas into elegant and functional digital products.',
-    'about.skills.frontend': 'Frontend',
-    'about.skills.backend': 'Backend',
-    'about.skills.mobile': 'Mobile/Desktop',
-    'about.skills.ai': 'Artificial Intelligence',
+    'about.subtitle': 'AI Product Manager with strong foundation in artificial intelligence and product development',
+    'about.description': 'AI Product Manager experienced in building end-to-end AI solutions for real-world business problems. I combine technical expertise in AI and APIs with a product-oriented mindset and deep understanding of customer needs. Specialized in leading cross-functional teams and driving innovation through AI-driven products.',
+    'about.skills.ai': 'AI & ML',
+    'about.skills.tools': 'Tools & Automation',
+    'about.skills.languages': 'Programming Languages',
+    'about.skills.product': 'Product Management',
     
     // Contact Section
     'contact.title': 'Contact',
