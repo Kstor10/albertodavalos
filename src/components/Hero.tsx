@@ -1,9 +1,11 @@
 import React from 'react';
 import { ArrowRight, Download, Github, Linkedin, Mail } from 'lucide-react';
 import { useLanguage } from '@/contexts/LanguageContext';
+import { useToast } from '@/hooks/use-toast';
 
 const Hero: React.FC = () => {
   const { t } = useLanguage();
+  const { toast } = useToast();
 
   const scrollToProjects = () => {
     const element = document.querySelector('#projects');
@@ -12,10 +14,28 @@ const Hero: React.FC = () => {
     }
   };
 
+  const copyEmail = () => {
+    navigator.clipboard.writeText('albertodavalos.ia@gmail.com');
+    toast({
+      title: "Email copied!",
+      description: "albertodavalos.ia@gmail.com has been copied to your clipboard.",
+    });
+  };
+
+  const downloadCV = () => {
+    // Create a link to download CV
+    const link = document.createElement('a');
+    link.href = '/cv-luis-alberto-davalos.pdf'; // You'll need to add the CV file to public folder
+    link.download = 'Luis-Alberto-Davalos-CV.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   const socialLinks = [
-    { icon: Github, href: 'https://github.com/luisalbertodavalos', label: 'GitHub' },
+    { icon: Github, href: 'https://github.com/Kstor10', label: 'GitHub' },
     { icon: Linkedin, href: 'https://www.linkedin.com/in/luis-alberto-dávalos-5b7a94188', label: 'LinkedIn' },
-    { icon: Mail, href: 'mailto:albertodavalos.ia@gmail.com', label: 'Email' }
+    { icon: Mail, href: '#', label: 'Email', onClick: copyEmail }
   ];
 
   return (
@@ -58,7 +78,10 @@ const Hero: React.FC = () => {
                 <ArrowRight size={20} />
               </button>
               
-              <button className="px-6 py-3 rounded-lg border border-border hover:bg-muted/50 transition-all duration-300 flex items-center justify-center gap-3">
+              <button 
+                onClick={downloadCV}
+                className="px-6 py-3 rounded-lg border border-border hover:bg-muted/50 transition-all duration-300 flex items-center justify-center gap-3"
+              >
                 <Download size={20} />
                 {t('hero.download')}
               </button>
@@ -66,17 +89,28 @@ const Hero: React.FC = () => {
 
             {/* Social Links */}
             <div className="flex justify-center space-x-6">
-              {socialLinks.map(({ icon: Icon, href, label }) => (
-                <a
-                  key={label}
-                  href={href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="p-3 rounded-lg bg-muted/50 hover:bg-muted transition-all duration-300 hover:scale-110 hover:shadow-lg group"
-                  aria-label={label}
-                >
-                  <Icon size={20} className="group-hover:text-primary transition-colors" />
-                </a>
+              {socialLinks.map(({ icon: Icon, href, label, onClick }) => (
+                onClick ? (
+                  <button
+                    key={label}
+                    onClick={onClick}
+                    className="p-3 rounded-lg bg-muted/50 hover:bg-muted transition-all duration-300 hover:scale-110 hover:shadow-lg group"
+                    aria-label={label}
+                  >
+                    <Icon size={20} className="group-hover:text-primary transition-colors" />
+                  </button>
+                ) : (
+                  <a
+                    key={label}
+                    href={href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="p-3 rounded-lg bg-muted/50 hover:bg-muted transition-all duration-300 hover:scale-110 hover:shadow-lg group"
+                    aria-label={label}
+                  >
+                    <Icon size={20} className="group-hover:text-primary transition-colors" />
+                  </a>
+                )
               ))}
             </div>
           </div>
