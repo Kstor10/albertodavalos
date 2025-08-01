@@ -1,6 +1,11 @@
 import React, { useState, useMemo } from 'react';
 import { Search, ExternalLink, Github, Calendar, Tag } from 'lucide-react';
 import { useLanguage } from '@/contexts/LanguageContext';
+import realEstateImg from '@/assets/real-estate-ai.jpg';
+import chatbotImg from '@/assets/chatbot-ai.jpg';
+import focusflowImg from '@/assets/focusflow.jpg';
+import hedgeFundImg from '@/assets/ai-hedge-fund.jpg';
+import elizaImg from '@/assets/eliza-agents.jpg';
 
 interface Project {
   id: string;
@@ -25,7 +30,7 @@ const Projects: React.FC = () => {
       id: '1',
       title: 'Real Estate Investment System',
       description: 'Sistema de análisis de inversión inmobiliaria con IA para el mercado español. Integra APIs de Idealista y Fotocasa con agentes CrewAI para evaluación automática de oportunidades de inversión.',
-      image: '/api/placeholder/400/240',
+      image: realEstateImg,
       technologies: ['Python', 'CrewAI', 'REST APIs', 'Data Analysis', 'dotenv'],
       category: 'ai',
       date: '2024-12',
@@ -37,7 +42,7 @@ const Projects: React.FC = () => {
       id: '2',
       title: 'Chatbot IA The Green Brand',
       description: 'Chatbot conversacional para e-commerce integrado con TypeScript y Voiceflow, alineado con KPIs del cliente para soporte al cliente automatizado.',
-      image: '/api/placeholder/400/240',
+      image: chatbotImg,
       technologies: ['TypeScript', 'Voiceflow', 'API Integration'],
       category: 'ai',
       date: '2024-11',
@@ -49,7 +54,7 @@ const Projects: React.FC = () => {
       id: '3',
       title: 'FocusFlow',
       description: 'Extensión de Chrome con temporizador Pomodoro y bloqueo de sitios web para mejorar la productividad durante el trabajo.',
-      image: '/api/placeholder/400/240',
+      image: focusflowImg,
       technologies: ['JavaScript', 'Chrome Extension APIs'],
       category: 'extension',
       date: '2024-10',
@@ -61,7 +66,7 @@ const Projects: React.FC = () => {
       id: '4',
       title: 'AI Hedge Fund',
       description: 'Agentes de trading automatizado con capas de análisis de sentimiento y estrategia para gestión inteligente de inversiones.',
-      image: '/api/placeholder/400/240',
+      image: hedgeFundImg,
       technologies: ['Python', 'AI Agents', 'Financial APIs', 'Sentiment Analysis'],
       category: 'ai',
       date: '2024-09',
@@ -72,7 +77,7 @@ const Projects: React.FC = () => {
       id: '5',
       title: 'Eliza Framework Agents',
       description: 'Desarrollo y despliegue de agentes autónomos personalizados utilizando el framework Eliza para automatización avanzada.',
-      image: '/api/placeholder/400/240',
+      image: elizaImg,
       technologies: ['Eliza Framework', 'Node.js', 'AI Agents', 'Jupyter'],
       category: 'ai',
       date: '2024-08',
