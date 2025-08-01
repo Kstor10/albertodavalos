@@ -29,7 +29,7 @@ const Projects: React.FC = () => {
     {
       id: '1',
       title: 'Real Estate Investment System',
-      description: 'Sistema de análisis de inversión inmobiliaria con IA para el mercado español. Integra APIs de Idealista y Fotocasa con agentes CrewAI para evaluación automática de oportunidades de inversión.',
+      description: 'AI-powered real estate investment analysis system for the Spanish market. Integrates Idealista and Fotocasa APIs with CrewAI agents for automatic investment opportunity evaluation.',
       image: realEstateImg,
       technologies: ['Python', 'CrewAI', 'REST APIs', 'Data Analysis', 'dotenv'],
       category: 'ai',
@@ -40,8 +40,8 @@ const Projects: React.FC = () => {
     },
     {
       id: '2',
-      title: 'Chatbot IA The Green Brand',
-      description: 'Chatbot conversacional para e-commerce integrado con TypeScript y Voiceflow, alineado con KPIs del cliente para soporte al cliente automatizado.',
+      title: 'AI Chatbot The Green Brand',
+      description: 'Conversational chatbot for e-commerce integrated with TypeScript and Voiceflow, aligned with client KPIs for automated customer support.',
       image: chatbotImg,
       technologies: ['TypeScript', 'Voiceflow', 'API Integration'],
       category: 'ai',
@@ -53,7 +53,7 @@ const Projects: React.FC = () => {
     {
       id: '3',
       title: 'FocusFlow',
-      description: 'Extensión de Chrome con temporizador Pomodoro y bloqueo de sitios web para mejorar la productividad durante el trabajo.',
+      description: 'Chrome extension with Pomodoro timer and website blocker to improve productivity during work.',
       image: focusflowImg,
       technologies: ['JavaScript', 'Chrome Extension APIs'],
       category: 'extension',
@@ -65,7 +65,7 @@ const Projects: React.FC = () => {
     {
       id: '4',
       title: 'AI Hedge Fund',
-      description: 'Agentes de trading automatizado con capas de análisis de sentimiento y estrategia para gestión inteligente de inversiones.',
+      description: 'Automated trading agents with sentiment analysis and strategy layers for intelligent investment management.',
       image: hedgeFundImg,
       technologies: ['Python', 'AI Agents', 'Financial APIs', 'Sentiment Analysis'],
       category: 'ai',
@@ -76,7 +76,7 @@ const Projects: React.FC = () => {
     {
       id: '5',
       title: 'Eliza Framework Agents',
-      description: 'Desarrollo y despliegue de agentes autónomos personalizados utilizando el framework Eliza para automatización avanzada.',
+      description: 'Development and deployment of custom autonomous agents using the Eliza framework for advanced automation.',
       image: elizaImg,
       technologies: ['Eliza Framework', 'Node.js', 'AI Agents', 'Jupyter'],
       category: 'ai',
@@ -255,9 +255,9 @@ const Projects: React.FC = () => {
         {filteredProjects.length === 0 && (
           <div className="text-center py-16">
             <div className="text-6xl mb-4">🔍</div>
-            <h3 className="text-xl font-semibold mb-2">No se encontraron proyectos</h3>
+            <h3 className="text-xl font-semibold mb-2">No projects found</h3>
             <p className="text-muted-foreground">
-              Intenta con otros términos de búsqueda o selecciona una categoría diferente
+              Try different search terms or select a different category
             </p>
           </div>
         )}
