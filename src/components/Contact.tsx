@@ -22,8 +22,8 @@ const Contact: React.FC = () => {
     await new Promise(resolve => setTimeout(resolve, 1000));
     
     toast({
-      title: "Mensaje enviado",
-      description: "Gracias por contactarme. Te responderé pronto.",
+      title: "Message sent",
+      description: "Thank you for contacting me. I'll respond soon.",
     });
     
     setFormData({ name: '', email: '', subject: '', message: '' });
@@ -46,29 +46,37 @@ const Contact: React.FC = () => {
     },
     {
       icon: Phone,
-      label: 'Teléfono',
+      label: 'Phone',
       value: '+34 611 511 075',
       href: 'tel:+34611511075'
     },
     {
       icon: MapPin,
-      label: 'Ubicación',
-      value: 'Barcelona, España',
+      label: 'Location',
+      value: 'Barcelona, Spain',
       href: '#'
     },
     {
       icon: Clock,
-      label: 'Horario',
-      value: 'Lun - Vie, 9:00 - 18:00',
+      label: 'Schedule',
+      value: 'Mon - Fri, 9:00 - 18:00',
       href: '#'
     }
   ];
+
+  const copyEmail = () => {
+    navigator.clipboard.writeText('albertodavalos.ia@gmail.com');
+    toast({
+      title: "Email copied!",
+      description: "albertodavalos.ia@gmail.com has been copied to your clipboard.",
+    });
+  };
 
   const socialLinks = [
     {
       icon: Github,
       label: 'GitHub',
-      href: 'https://github.com/luisalbertodavalos',
+      href: 'https://github.com/Kstor10',
       color: 'hover:text-gray-400'
     },
     {
@@ -80,8 +88,9 @@ const Contact: React.FC = () => {
     {
       icon: Mail,
       label: 'Email',
-      href: 'mailto:albertodavalos.ia@gmail.com',
-      color: 'hover:text-green-400'
+      href: '#',
+      color: 'hover:text-green-400',
+      onClick: copyEmail
     }
   ];
 
@@ -102,9 +111,9 @@ const Contact: React.FC = () => {
           {/* Contact Form */}
           <div className="space-y-8">
             <div>
-              <h3 className="text-2xl font-bold mb-4">Envíame un mensaje</h3>
+              <h3 className="text-2xl font-bold mb-4">Send me a message</h3>
               <p className="text-muted-foreground mb-8">
-                Cuéntame sobre tu proyecto y trabajemos juntos para hacerlo realidad.
+                Tell me about your project and let's work together to make it a reality.
               </p>
             </div>
 
@@ -122,7 +131,7 @@ const Contact: React.FC = () => {
                     onChange={handleChange}
                     required
                     className="glass-input w-full"
-                    placeholder="Tu nombre completo"
+                    placeholder="Your full name"
                   />
                 </div>
                 
@@ -138,7 +147,7 @@ const Contact: React.FC = () => {
                     onChange={handleChange}
                     required
                     className="glass-input w-full"
-                    placeholder="tu.email@ejemplo.com"
+                    placeholder="your.email@example.com"
                   />
                 </div>
               </div>
@@ -155,7 +164,7 @@ const Contact: React.FC = () => {
                   onChange={handleChange}
                   required
                   className="glass-input w-full"
-                  placeholder="Asunto del mensaje"
+                  placeholder="Message subject"
                 />
               </div>
 
@@ -171,7 +180,7 @@ const Contact: React.FC = () => {
                   required
                   rows={6}
                   className="glass-input w-full resize-none"
-                  placeholder="Describe tu proyecto o consulta..."
+                  placeholder="Describe your project or inquiry..."
                 />
               </div>
 
@@ -183,7 +192,7 @@ const Contact: React.FC = () => {
                 {isSubmitting ? (
                   <>
                     <div className="w-5 h-5 border-2 border-white/30 border-t-white rounded-full animate-spin" />
-                    Enviando...
+                    Sending...
                   </>
                 ) : (
                   <>
@@ -240,17 +249,26 @@ const Contact: React.FC = () => {
                 <span className="font-medium text-green-500">{t('contact.availability')}</span>
               </div>
               <p className="text-muted-foreground text-sm">
-                Actualmente acepto nuevos proyectos freelance. Tiempo de respuesta promedio: 2-4 horas.
+                Currently accepting new freelance projects. Average response time: 2-4 hours.
               </p>
             </div>
 
             {/* Social Links */}
             <div className="cyber-card p-6">
-              <h4 className="font-medium mb-4">Sígueme en redes</h4>
+              <h4 className="font-medium mb-4">Follow me on social media</h4>
               <div className="flex space-x-4">
                 {socialLinks.map((social) => {
                   const Icon = social.icon;
-                  return (
+                  return social.onClick ? (
+                    <button
+                      key={social.label}
+                      onClick={social.onClick}
+                      className={`p-3 rounded-lg bg-muted hover:bg-muted/80 transition-all duration-300 hover:scale-110 ${social.color}`}
+                      aria-label={social.label}
+                    >
+                      <Icon size={20} />
+                    </button>
+                  ) : (
                     <a
                       key={social.label}
                       href={social.href}
@@ -268,9 +286,9 @@ const Contact: React.FC = () => {
 
             {/* Quick Response */}
             <div className="bg-gradient-to-r from-primary/10 to-secondary/10 rounded-xl p-6 border border-primary/20">
-              <h4 className="font-medium mb-2">Respuesta Rápida</h4>
+              <h4 className="font-medium mb-2">Quick Response</h4>
               <p className="text-sm text-muted-foreground mb-4">
-                ¿Necesitas una consulta rápida? Escríbeme directamente por WhatsApp.
+                Need a quick consultation? Message me directly on WhatsApp.
               </p>
               <a
                 href="https://wa.me/34611511075"
@@ -279,7 +297,7 @@ const Contact: React.FC = () => {
                 className="inline-flex items-center gap-2 text-sm font-medium text-primary hover:text-primary-700 transition-colors"
               >
                 <Phone size={16} />
-                Abrir WhatsApp
+                Open WhatsApp
               </a>
             </div>
           </div>
