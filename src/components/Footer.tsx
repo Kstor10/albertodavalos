@@ -40,8 +40,8 @@ const Footer: React.FC = () => {
           </div>
 
           {/* Right Section - Back to Top */}
-          <button onClick={scrollToTop} className="flex items-center space-x-2 px-4 py-2 rounded-lg bg-muted hover:bg-muted/80 transition-all duration-300 hover:scale-105 group" aria-label="Volver arriba">
-            <span className="text-sm font-medium">Volver arriba</span>
+          <button onClick={scrollToTop} className="flex items-center space-x-2 px-4 py-2 rounded-lg bg-muted hover:bg-muted/80 transition-all duration-300 hover:scale-105 group" aria-label={t('footer.backToTop')}>
+            <span className="text-sm font-medium">{t('footer.backToTop')}</span>
             <ArrowUp size={16} className="group-hover:-translate-y-1 transition-transform" />
           </button>
         </div>

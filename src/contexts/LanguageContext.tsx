@@ -59,7 +59,8 @@ const translations = {
     
     // Footer
     'footer.rights': 'Todos los derechos reservados',
-    'footer.built': 'Construido con React, TypeScript y Tailwind CSS'
+    'footer.built': 'Construido con React, TypeScript y Tailwind CSS',
+    'footer.backToTop': 'Volver arriba'
   },
   en: {
     // Navigation
@@ -109,7 +110,8 @@ const translations = {
     
     // Footer
     'footer.rights': 'All rights reserved',
-    'footer.built': 'Built with React, TypeScript and Tailwind CSS'
+    'footer.built': 'Built with React, TypeScript and Tailwind CSS',
+    'footer.backToTop': 'Back to top'
   }
 };
 
