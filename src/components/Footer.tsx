@@ -1,16 +1,17 @@
 import React from 'react';
 import { Heart, ArrowUp } from 'lucide-react';
 import { useLanguage } from '@/contexts/LanguageContext';
-
 const Footer: React.FC = () => {
-  const { t } = useLanguage();
-
+  const {
+    t
+  } = useLanguage();
   const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
   };
-
-  return (
-    <footer className="relative py-12 border-t border-border">
+  return <footer className="relative py-12 border-t border-border">
       {/* Background Gradient */}
       <div className="absolute inset-0 bg-gradient-to-t from-muted/20 to-transparent"></div>
       
@@ -22,7 +23,7 @@ const Footer: React.FC = () => {
               <div className="w-6 h-6 rounded bg-gradient-to-br from-primary to-secondary flex items-center justify-center">
                 <span className="text-white text-xs font-bold font-mono">{'<>'}</span>
               </div>
-              <span className="font-bold text-gradient">Alex García</span>
+              <span className="font-bold text-gradient">Luis Alberto Dávalos </span>
             </div>
             
             <div className="hidden md:block w-px h-4 bg-border"></div>
@@ -39,11 +40,7 @@ const Footer: React.FC = () => {
           </div>
 
           {/* Right Section - Back to Top */}
-          <button
-            onClick={scrollToTop}
-            className="flex items-center space-x-2 px-4 py-2 rounded-lg bg-muted hover:bg-muted/80 transition-all duration-300 hover:scale-105 group"
-            aria-label="Volver arriba"
-          >
+          <button onClick={scrollToTop} className="flex items-center space-x-2 px-4 py-2 rounded-lg bg-muted hover:bg-muted/80 transition-all duration-300 hover:scale-105 group" aria-label="Volver arriba">
             <span className="text-sm font-medium">Volver arriba</span>
             <ArrowUp size={16} className="group-hover:-translate-y-1 transition-transform" />
           </button>
@@ -51,13 +48,9 @@ const Footer: React.FC = () => {
         
         {/* Bottom Line */}
         <div className="mt-8 pt-6 border-t border-border text-center">
-          <p className="text-xs text-muted-foreground">
-            Diseñado y desarrollado con pasión por la innovación y el código limpio.
-          </p>
+          
         </div>
       </div>
-    </footer>
-  );
+    </footer>;
 };
-
 export default Footer;

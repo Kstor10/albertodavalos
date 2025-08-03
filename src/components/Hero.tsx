@@ -2,26 +2,28 @@ import React from 'react';
 import { ArrowRight, Download, Github, Linkedin, Mail } from 'lucide-react';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { useToast } from '@/hooks/use-toast';
-
 const Hero: React.FC = () => {
-  const { t } = useLanguage();
-  const { toast } = useToast();
-
+  const {
+    t
+  } = useLanguage();
+  const {
+    toast
+  } = useToast();
   const scrollToProjects = () => {
     const element = document.querySelector('#projects');
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+      element.scrollIntoView({
+        behavior: 'smooth'
+      });
     }
   };
-
   const copyEmail = () => {
     navigator.clipboard.writeText('albertodavalos.ia@gmail.com');
     toast({
       title: "Email copied!",
-      description: "albertodavalos.ia@gmail.com has been copied to your clipboard.",
+      description: "albertodavalos.ia@gmail.com has been copied to your clipboard."
     });
   };
-
   const downloadCV = () => {
     // Create a link to download CV
     const link = document.createElement('a');
@@ -31,15 +33,21 @@ const Hero: React.FC = () => {
     link.click();
     document.body.removeChild(link);
   };
-
-  const socialLinks = [
-    { icon: Github, href: 'https://github.com/Kstor10', label: 'GitHub' },
-    { icon: Linkedin, href: 'https://www.linkedin.com/in/luis-alberto-dávalos-5b7a94188', label: 'LinkedIn' },
-    { icon: Mail, href: '#', label: 'Email', onClick: copyEmail }
-  ];
-
-  return (
-    <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden">
+  const socialLinks = [{
+    icon: Github,
+    href: 'https://github.com/Kstor10',
+    label: 'GitHub'
+  }, {
+    icon: Linkedin,
+    href: 'https://www.linkedin.com/in/luis-alberto-dávalos-5b7a94188',
+    label: 'LinkedIn'
+  }, {
+    icon: Mail,
+    href: '#',
+    label: 'Email',
+    onClick: copyEmail
+  }];
+  return <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden">
       {/* Background Effects */}
       <div className="absolute inset-0 bg-gradient-to-br from-background via-background to-muted/20"></div>
       <div className="absolute inset-0">
@@ -70,48 +78,26 @@ const Hero: React.FC = () => {
 
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-              <button 
-                onClick={scrollToProjects}
-                className="cyber-button flex items-center justify-center gap-3 text-white font-medium"
-              >
+              <button onClick={scrollToProjects} className="cyber-button flex items-center justify-center gap-3 text-white font-medium">
                 {t('hero.cta')}
                 <ArrowRight size={20} />
               </button>
               
-              <button 
-                onClick={downloadCV}
-                className="px-6 py-3 rounded-lg border border-border hover:bg-muted/50 transition-all duration-300 flex items-center justify-center gap-3"
-              >
-                <Download size={20} />
-                {t('hero.download')}
-              </button>
+              
             </div>
 
             {/* Social Links */}
             <div className="flex justify-center space-x-6">
-              {socialLinks.map(({ icon: Icon, href, label, onClick }) => (
-                onClick ? (
-                  <button
-                    key={label}
-                    onClick={onClick}
-                    className="p-3 rounded-lg bg-muted/50 hover:bg-muted transition-all duration-300 hover:scale-110 hover:shadow-lg group"
-                    aria-label={label}
-                  >
+              {socialLinks.map(({
+              icon: Icon,
+              href,
+              label,
+              onClick
+            }) => onClick ? <button key={label} onClick={onClick} className="p-3 rounded-lg bg-muted/50 hover:bg-muted transition-all duration-300 hover:scale-110 hover:shadow-lg group" aria-label={label}>
                     <Icon size={20} className="group-hover:text-primary transition-colors" />
-                  </button>
-                ) : (
-                  <a
-                    key={label}
-                    href={href}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="p-3 rounded-lg bg-muted/50 hover:bg-muted transition-all duration-300 hover:scale-110 hover:shadow-lg group"
-                    aria-label={label}
-                  >
+                  </button> : <a key={label} href={href} target="_blank" rel="noopener noreferrer" className="p-3 rounded-lg bg-muted/50 hover:bg-muted transition-all duration-300 hover:scale-110 hover:shadow-lg group" aria-label={label}>
                     <Icon size={20} className="group-hover:text-primary transition-colors" />
-                  </a>
-                )
-              ))}
+                  </a>)}
             </div>
           </div>
 
@@ -123,8 +109,6 @@ const Hero: React.FC = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Hero;
