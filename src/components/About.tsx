@@ -57,49 +57,49 @@ const About: React.FC = () => {
 
   const experience = [
     {
-      title: 'Cofounder & AI Product Manager',
-      company: 'Datway.ai (freelance)',
+      title: t('experience.datway.title'),
+      company: t('experience.datway.company'),
       period: '2023 - 2025',
-      description: 'Led the full product lifecycle of AI-based solutions, from ideation to implementation and user validation. Designed and deployed custom conversational chatbots and automated complex workflows.'
+      description: t('experience.datway.description')
     },
     {
-      title: 'Hospitality & Cocktail Consultant',
-      company: 'Freelance',
+      title: t('experience.hospitality.title'),
+      company: t('experience.hospitality.company'),
       period: 'Mar 2019 - Jan 2024',
-      description: 'Created signature cocktail menus, defined strategic plans and led teams. Prepared cost structures and budgets.'
+      description: t('experience.hospitality.description')
     },
     {
-      title: 'Business Developer',
-      company: 'Schweppes Premium Mixers',
+      title: t('experience.business.title'),
+      company: t('experience.business.company'),
       period: 'Feb 2020 - Oct 2020',
-      description: 'Managed and retained client portfolios across Spain. Created digital menus and marketing strategies.'
+      description: t('experience.business.description')
     }
   ];
 
   const education = [
     {
-      title: 'AI Product Manager Course',
-      institution: 'Microsoft',
+      title: t('education.aipm.title'),
+      institution: t('education.aipm.institution'),
       period: '2025 - In Progress',
-      description: 'Specialized course in artificial intelligence product management'
+      description: t('education.aipm.description')
     },
     {
-      title: 'HND in Multiplatform Software Development',
-      institution: 'La Salle Barcelona',
+      title: t('education.dam.title'),
+      institution: t('education.dam.institution'),
       period: '2025 - In Progress',
-      description: 'Higher National Diploma in Multiplatform Software Development'
+      description: t('education.dam.description')
     },
     {
-      title: 'Master in AI & Innovation',
-      institution: 'Founderz x Microsoft',
+      title: t('education.master.title'),
+      institution: t('education.master.institution'),
       period: 'Oct 2024 - Jun 2025',
-      description: 'Master in Artificial Intelligence and Innovation'
+      description: t('education.master.description')
     },
     {
-      title: 'Advanced Course in Generative AI',
-      institution: 'UDIA/UCAM',
+      title: t('education.advanced.title'),
+      institution: t('education.advanced.institution'),
       period: 'Jul 2024 - Oct 2024',
-      description: 'Advanced University Course in Generative AI'
+      description: t('education.advanced.description')
     }
   ];
 

@@ -69,6 +69,31 @@ const translations = {
     'project.eliza.title': 'Agentes Framework Eliza',
     'project.eliza.description': 'Desarrollo e implementación de agentes autónomos personalizados usando el framework Eliza para automatización avanzada.',
 
+    // Experience
+    'experience.datway.title': 'Cofundador y AI Product Manager',
+    'experience.datway.company': 'Datway.ai (freelance)',
+    'experience.datway.description': 'Lideré el ciclo completo de vida de productos basados en IA, desde la ideación hasta la implementación y validación de usuarios. Diseñé e implementé chatbots conversacionales personalizados y automaticé flujos de trabajo complejos.',
+    'experience.hospitality.title': 'Consultor de Hospitalidad y Coctelería',
+    'experience.hospitality.company': 'Freelance',
+    'experience.hospitality.description': 'Creé menús de cócteles personalizados, definí planes estratégicos y lideré equipos. Preparé estructuras de costos y presupuestos.',
+    'experience.business.title': 'Desarrollador de Negocios',
+    'experience.business.company': 'Schweppes Premium Mixers',
+    'experience.business.description': 'Gestioné y mantuve carteras de clientes en toda España. Creé menús digitales y estrategias de marketing.',
+
+    // Education
+    'education.aipm.title': 'Curso de AI Product Manager',
+    'education.aipm.institution': 'Microsoft',
+    'education.aipm.description': 'Curso especializado en gestión de productos de inteligencia artificial',
+    'education.dam.title': 'Técnico Superior en Desarrollo de Aplicaciones Multiplataforma',
+    'education.dam.institution': 'La Salle Barcelona',
+    'education.dam.description': 'Técnico Superior en Desarrollo de Aplicaciones Multiplataforma',
+    'education.master.title': 'Máster en IA e Innovación',
+    'education.master.institution': 'Founderz x Microsoft',
+    'education.master.description': 'Máster en Inteligencia Artificial e Innovación',
+    'education.advanced.title': 'Curso Avanzado en IA Generativa',
+    'education.advanced.institution': 'UDIA/UCAM',
+    'education.advanced.description': 'Curso Universitario Avanzado en IA Generativa',
+
     // Footer
     'footer.rights': 'Todos los derechos reservados',
     'footer.built': 'Construido con React, TypeScript y Tailwind CSS',
@@ -131,6 +156,31 @@ const translations = {
     'project.hedgeFund.description': 'Automated trading agents with sentiment analysis and strategy layers for intelligent investment management.',
     'project.eliza.title': 'Eliza Framework Agents',
     'project.eliza.description': 'Development and deployment of custom autonomous agents using the Eliza framework for advanced automation.',
+
+    // Experience
+    'experience.datway.title': 'Cofounder & AI Product Manager',
+    'experience.datway.company': 'Datway.ai (freelance)',
+    'experience.datway.description': 'Led the full product lifecycle of AI-based solutions, from ideation to implementation and user validation. Designed and deployed custom conversational chatbots and automated complex workflows.',
+    'experience.hospitality.title': 'Hospitality & Cocktail Consultant',
+    'experience.hospitality.company': 'Freelance',
+    'experience.hospitality.description': 'Created signature cocktail menus, defined strategic plans and led teams. Prepared cost structures and budgets.',
+    'experience.business.title': 'Business Developer',
+    'experience.business.company': 'Schweppes Premium Mixers',
+    'experience.business.description': 'Managed and retained client portfolios across Spain. Created digital menus and marketing strategies.',
+
+    // Education
+    'education.aipm.title': 'AI Product Manager Course',
+    'education.aipm.institution': 'Microsoft',
+    'education.aipm.description': 'Specialized course in artificial intelligence product management',
+    'education.dam.title': 'HND in Multiplatform Software Development',
+    'education.dam.institution': 'La Salle Barcelona',
+    'education.dam.description': 'Higher National Diploma in Multiplatform Software Development',
+    'education.master.title': 'Master in AI & Innovation',
+    'education.master.institution': 'Founderz x Microsoft',
+    'education.master.description': 'Master in Artificial Intelligence and Innovation',
+    'education.advanced.title': 'Advanced Course in Generative AI',
+    'education.advanced.institution': 'UDIA/UCAM',
+    'education.advanced.description': 'Advanced University Course in Generative AI',
 
     // Footer
     'footer.rights': 'All rights reserved',
