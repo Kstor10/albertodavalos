@@ -57,6 +57,18 @@ const translations = {
     'contact.direct.subtitle': 'Respuesta en menos de 24 horas',
     'contact.availability': 'Disponible para proyectos freelance',
     
+    // Project descriptions
+    'project.realEstate.title': 'Sistema de Inversión Inmobiliaria',
+    'project.realEstate.description': 'Sistema de análisis de inversiones inmobiliarias potenciado por IA para el mercado español. Integra APIs de Idealista y Fotocasa con agentes CrewAI para evaluación automática de oportunidades de inversión.',
+    'project.chatbot.title': 'Chatbot IA The Green Brand',
+    'project.chatbot.description': 'Chatbot conversacional para e-commerce integrado con TypeScript y Voiceflow, alineado con KPIs del cliente para soporte automatizado al cliente.',
+    'project.focusflow.title': 'FocusFlow',
+    'project.focusflow.description': 'Extensión de Chrome con temporizador Pomodoro y bloqueador de sitios web para mejorar la productividad durante el trabajo.',
+    'project.hedgeFund.title': 'Fondo de Cobertura IA',
+    'project.hedgeFund.description': 'Agentes de trading automatizado con análisis de sentimientos y capas de estrategia para gestión inteligente de inversiones.',
+    'project.eliza.title': 'Agentes Framework Eliza',
+    'project.eliza.description': 'Desarrollo e implementación de agentes autónomos personalizados usando el framework Eliza para automatización avanzada.',
+
     // Footer
     'footer.rights': 'Todos los derechos reservados',
     'footer.built': 'Construido con React, TypeScript y Tailwind CSS',
@@ -108,6 +120,18 @@ const translations = {
     'contact.direct.subtitle': 'Response within 24 hours',
     'contact.availability': 'Available for freelance projects',
     
+    // Project descriptions
+    'project.realEstate.title': 'Real Estate Investment System',
+    'project.realEstate.description': 'AI-powered real estate investment analysis system for the Spanish market. Integrates Idealista and Fotocasa APIs with CrewAI agents for automatic investment opportunity evaluation.',
+    'project.chatbot.title': 'AI Chatbot The Green Brand',
+    'project.chatbot.description': 'Conversational chatbot for e-commerce integrated with TypeScript and Voiceflow, aligned with client KPIs for automated customer support.',
+    'project.focusflow.title': 'FocusFlow',
+    'project.focusflow.description': 'Chrome extension with Pomodoro timer and website blocker to improve productivity during work.',
+    'project.hedgeFund.title': 'AI Hedge Fund',
+    'project.hedgeFund.description': 'Automated trading agents with sentiment analysis and strategy layers for intelligent investment management.',
+    'project.eliza.title': 'Eliza Framework Agents',
+    'project.eliza.description': 'Development and deployment of custom autonomous agents using the Eliza framework for advanced automation.',
+
     // Footer
     'footer.rights': 'All rights reserved',
     'footer.built': 'Built with React, TypeScript and Tailwind CSS',

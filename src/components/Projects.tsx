@@ -28,8 +28,8 @@ const Projects: React.FC = () => {
   const projects: Project[] = [
     {
       id: '1',
-      title: 'Real Estate Investment System',
-      description: 'AI-powered real estate investment analysis system for the Spanish market. Integrates Idealista and Fotocasa APIs with CrewAI agents for automatic investment opportunity evaluation.',
+      title: t('project.realEstate.title'),
+      description: t('project.realEstate.description'),
       image: realEstateImg,
       technologies: ['Python', 'CrewAI', 'REST APIs', 'Data Analysis', 'dotenv'],
       category: 'ai',
@@ -40,8 +40,8 @@ const Projects: React.FC = () => {
     },
     {
       id: '2',
-      title: 'AI Chatbot The Green Brand',
-      description: 'Conversational chatbot for e-commerce integrated with TypeScript and Voiceflow, aligned with client KPIs for automated customer support.',
+      title: t('project.chatbot.title'),
+      description: t('project.chatbot.description'),
       image: chatbotImg,
       technologies: ['TypeScript', 'Voiceflow', 'API Integration'],
       category: 'ai',
@@ -52,8 +52,8 @@ const Projects: React.FC = () => {
     },
     {
       id: '3',
-      title: 'FocusFlow',
-      description: 'Chrome extension with Pomodoro timer and website blocker to improve productivity during work.',
+      title: t('project.focusflow.title'),
+      description: t('project.focusflow.description'),
       image: focusflowImg,
       technologies: ['JavaScript', 'Chrome Extension APIs'],
       category: 'extension',
@@ -64,8 +64,8 @@ const Projects: React.FC = () => {
     },
     {
       id: '4',
-      title: 'AI Hedge Fund',
-      description: 'Automated trading agents with sentiment analysis and strategy layers for intelligent investment management.',
+      title: t('project.hedgeFund.title'),
+      description: t('project.hedgeFund.description'),
       image: hedgeFundImg,
       technologies: ['Python', 'AI Agents', 'Financial APIs', 'Sentiment Analysis'],
       category: 'ai',
@@ -75,8 +75,8 @@ const Projects: React.FC = () => {
     },
     {
       id: '5',
-      title: 'Eliza Framework Agents',
-      description: 'Development and deployment of custom autonomous agents using the Eliza framework for advanced automation.',
+      title: t('project.eliza.title'),
+      description: t('project.eliza.description'),
       image: elizaImg,
       technologies: ['Eliza Framework', 'Node.js', 'AI Agents', 'Jupyter'],
       category: 'ai',
