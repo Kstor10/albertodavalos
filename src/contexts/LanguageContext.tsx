@@ -35,6 +35,9 @@ const translations = {
     'projects.search': 'Buscar proyectos...',
     'projects.demo': 'Ver Demo',
     'projects.code': 'Ver Código',
+    'projects.featured': 'Destacado',
+    'projects.noResults': 'No se encontraron proyectos',
+    'projects.noResultsDesc': 'Prueba diferentes términos de búsqueda o selecciona una categoría diferente',
     
     // About Section
     'about.title': 'Sobre Mí',
@@ -123,6 +126,9 @@ const translations = {
     'projects.search': 'Search projects...',
     'projects.demo': 'View Demo',
     'projects.code': 'View Code',
+    'projects.featured': 'Featured',
+    'projects.noResults': 'No projects found',
+    'projects.noResultsDesc': 'Try different search terms or select a different category',
     
     // About Section
     'about.title': 'About Me',

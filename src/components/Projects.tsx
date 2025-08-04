@@ -177,7 +177,7 @@ const Projects: React.FC = () => {
                   {project.featured && (
                     <div className="absolute top-3 right-3">
                       <div className="bg-primary text-primary-foreground text-xs px-2 py-1 rounded-full">
-                        Featured
+                        {t('projects.featured')}
                       </div>
                     </div>
                   )}
@@ -255,9 +255,9 @@ const Projects: React.FC = () => {
         {filteredProjects.length === 0 && (
           <div className="text-center py-16">
             <div className="text-6xl mb-4">🔍</div>
-            <h3 className="text-xl font-semibold mb-2">No projects found</h3>
+            <h3 className="text-xl font-semibold mb-2">{t('projects.noResults')}</h3>
             <p className="text-muted-foreground">
-              Try different search terms or select a different category
+              {t('projects.noResultsDesc')}
             </p>
           </div>
         )}
