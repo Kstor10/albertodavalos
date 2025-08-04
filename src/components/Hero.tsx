@@ -62,7 +62,7 @@ const Hero: React.FC = () => {
             {/* Greeting */}
             <div className="inline-flex items-center px-4 py-2 rounded-full bg-muted/50 border border-border mb-8">
               <div className="w-2 h-2 bg-green-500 rounded-full mr-3 animate-pulse"></div>
-              <span className="text-sm text-muted-foreground">{t('contact.availability')}</span>
+              <span className="text-sm text-muted-foreground">Available</span>
             </div>
 
             {/* Name & Title */}
