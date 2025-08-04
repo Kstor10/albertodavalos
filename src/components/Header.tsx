@@ -62,31 +62,8 @@ const Header: React.FC = () => {
             ))}
           </nav>
 
-          {/* Language Switcher & Mobile Menu */}
+          {/* Mobile Menu */}
           <div className="flex items-center space-x-4">
-            {/* Language Switcher */}
-            <div className="flex items-center space-x-1 bg-muted/50 rounded-lg p-1">
-              <button
-                onClick={() => setLanguage('es')}
-                className={`px-2 py-1 rounded text-sm font-medium transition-colors ${
-                  language === 'es' 
-                    ? 'bg-primary text-primary-foreground' 
-                    : 'text-muted-foreground hover:text-foreground'
-                }`}
-              >
-                ES
-              </button>
-              <button
-                onClick={() => setLanguage('en')}
-                className={`px-2 py-1 rounded text-sm font-medium transition-colors ${
-                  language === 'en' 
-                    ? 'bg-primary text-primary-foreground' 
-                    : 'text-muted-foreground hover:text-foreground'
-                }`}
-              >
-                EN
-              </button>
-            </div>
 
             {/* Mobile Menu Button */}
             <button
