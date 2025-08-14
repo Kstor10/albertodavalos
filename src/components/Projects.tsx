@@ -6,6 +6,7 @@ import chatbotImg from '@/assets/chatbot-ai.jpg';
 import focusflowImg from '@/assets/focusflow.jpg';
 import hedgeFundImg from '@/assets/ai-hedge-fund.jpg';
 import elizaImg from '@/assets/eliza-agents.jpg';
+import cryptoWhaleImg from '@/assets/crypto-whale-tracker.jpg';
 
 interface Project {
   id: string;
@@ -81,6 +82,17 @@ const Projects: React.FC = () => {
       technologies: ['Eliza Framework', 'Node.js', 'AI Agents', 'Jupyter'],
       category: 'ai',
       date: '2024-08',
+      demoUrl: '#',
+      codeUrl: '#'
+    },
+    {
+      id: '6',
+      title: 'Crypto Whale Tracker',
+      description: 'Real-time tracking and analysis of large cryptocurrency transactions and whale movements across multiple blockchains.',
+      image: cryptoWhaleImg,
+      technologies: ['React', 'TypeScript', 'Blockchain APIs', 'WebSocket', 'Chart.js'],
+      category: 'web',
+      date: '2024-07',
       demoUrl: '#',
       codeUrl: '#'
     }
