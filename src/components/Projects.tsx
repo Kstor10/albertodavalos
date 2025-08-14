@@ -7,6 +7,7 @@ import focusflowImg from '@/assets/focusflow.jpg';
 import hedgeFundImg from '@/assets/ai-hedge-fund.jpg';
 import elizaImg from '@/assets/eliza-agents.jpg';
 import cryptoWhaleImg from '@/assets/crypto-whale-tracker.jpg';
+import challengerImg from '@/assets/challenger-ai.jpg';
 
 interface Project {
   id: string;
@@ -95,6 +96,17 @@ const Projects: React.FC = () => {
       date: '2024-07',
       demoUrl: '#',
       codeUrl: '#'
+    },
+    {
+      id: '7',
+      title: 'Challenger.AI',
+      description: 'Cross-platform AI assistant app that delivers personalized challenges and tracks progress through gamified experiences for personal growth and productivity.',
+      image: challengerImg,
+      technologies: ['React Native', 'Expo', 'TypeScript', 'Supabase', 'AI Integration'],
+      category: 'mobile',
+      date: '2024-06',
+      demoUrl: '#',
+      codeUrl: 'https://github.com/Kstor10/challenger.ai'
     }
   ];
 
