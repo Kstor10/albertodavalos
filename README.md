@@ -1,26 +1,28 @@
-# Project Documentation
+# Alberto Davalos
 
-## Introduction
-This project, named 'AlbertoDavalos', is designed to ...
+A modern web application built with TypeScript, React, and Tailwind CSS.
 
-## Features
-- Feature 1: Description
-- Feature 2: Description
+## 🚀 Features
 
-## Installation
-To install this project, run:
+- **Modern Tech Stack**: Built with Vite, React, and TypeScript for optimal performance
+- **Styled Components**: Tailwind CSS for responsive and elegant UI design
+- **Component Library**: Shadcn/ui components for consistent design patterns
+- **Development Tools**: ESLint, PostCSS, and TypeScript for code quality
+- **Package Management**: Supports both npm and Bun for dependency management
 
-```
-$ git clone https://github.com/Kstor10/albertodavalos.git
-$ cd albertodavalos
-$ npm install
-```
+## 📋 Tech Stack
 
-## Usage
-To use this project, ... 
+- **Frontend**: React 18+
+- **Language**: TypeScript (96.3%)
+- **Styling**: Tailwind CSS (2.7%) + CSS
+- **Build Tool**: Vite
+- **Component Library**: Shadcn/ui
+- **Package Manager**: npm / Bun
+- **Linting**: ESLint
+- **CSS Processing**: PostCSS
 
-## Contributing
-If you would like to contribute, please fork the repository and submit a pull request.
+## 📦 Installation
 
-## License
-This project is licensed under the MIT License.
+### Prerequisites
+- Node.js (v16 or higher)
+- npm or Bun package manager
