@@ -2,6 +2,8 @@
 
 A modern web application built with TypeScript, React, and Tailwind CSS.
 
+https://lovable.dev/projects/aacb2c05-fb3a-4726-a947-54e3958d323d
+
 ## 🚀 Features
 
 - **Modern Tech Stack**: Built with Vite, React, and TypeScript for optimal performance
